@@ -5,7 +5,7 @@ const CustomerDetails = ({ customer }) => {
 
   useEffect(() => {
     const fetchPhotos = async () => {
-      const response = await fetch(`https://api.unsplash.com/photos/random?count=9&client_id=QtAd_CLiMeOga1ycJrrxV1UMCKQVdSAqaULp6KjzLB0`);
+      const response = await fetch(`https://api.unsplash.com/photos/random?count=9&client_id=`);
       const data = await response.json();
       setPhotos(data.map(photo => photo.urls.small));
     };
